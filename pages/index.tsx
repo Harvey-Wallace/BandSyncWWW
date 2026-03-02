@@ -7,115 +7,115 @@ export default function Home() {
   const testimonials = [
     {
       author: 'Sarah Thompson',
-      role: 'MD, City of Birmingham Brass Band',
-      content: 'BandSync has transformed how we manage rehearsals. No more WhatsApp chaos, no more missed messages. Everyone knows exactly what time we\'re playing and what to bring.',
+      role: 'Librarian, City of Birmingham Brass Band',
+      content: 'BandSync Library has completely transformed how we manage our music collection. Finding any piece takes seconds, and everyone always has the right version.',
     },
     {
       author: 'James Wilson',
-      role: 'Band Member',
-      content: 'The availability tracking is a game-changer. Instead of sending 30 messages to check who\'s free, the MD just gets instant clarity. It\'s saved us hours.',
+      role: 'Band Secretary',
+      content: 'We had boxes of music everywhere with no system. Now everything is digitized, searchable, and organized. It\'s saved us countless hours before concerts.',
     },
     {
-      author: 'Lisa Chen',
-      role: 'Librarian',
-      content: 'Managing sheet music used to be nightmare. Now searching for a piece takes seconds and everyone has access to the latest versions instantly.',
+      author: 'Mike Roberts',
+      role: 'Musical Director',
+      content: 'Programming concerts is so much easier now. I can search by composer, difficulty, or duration and find exactly what I need. Absolute game-changer.',
     },
   ]
 
   const features = [
     {
-      icon: '📋',
-      title: 'Plan Rehearsals & Gigs in Seconds',
-      description: 'Create events, set dates, add details. No complexity. Your band is ready to go.',
+      icon: '�',
+      title: 'Instant Search Across Your Library',
+      description: 'Find any piece in seconds. Search by title, composer, arranger, or tags. No more digging through folders.',
     },
     {
-      icon: '✋',
-      title: 'See Who\'s Coming Instantly',
-      description: 'Availability tracking that actually works. No WhatsApp threads. No guessing. Just clarity.',
+      icon: '📁',
+      title: 'Smart Organization & Categories',
+      description: 'Organize by genre, difficulty, ensemble size, or your own custom tags. Your library, your way.',
     },
     {
       icon: '🎵',
-      title: 'Find Sheet Music in 10 Seconds',
-      description: 'Searchable music library organized and ready. No more digging through folders.',
+      title: 'Digital Sheet Music Access',
+      description: 'Upload PDFs, assign parts to players, and let everyone access the latest versions instantly.',
     },
     {
-      icon: '🔔',
-      title: 'Reminders That Actually Work',
-      description: 'Automated reminders ensure no one forgets rehearsal. Less stress for you, better attendance for the band.',
+      icon: '📊',
+      title: 'Track Your Collection',
+      description: 'Know exactly what you own, what\'s on loan, and what\'s missing. Never buy duplicates again.',
     },
   ]
 
   const steps = [
     {
       number: 1,
-      title: 'Create Your Band',
-      description: 'Sign up and set your band name. Takes 2 minutes.',
+      title: 'Create Your Library',
+      description: 'Sign up and set up your band\'s music library. Takes 2 minutes.',
     },
     {
       number: 2,
-      title: 'Invite Your Members',
-      description: 'Send links to band members. They sign up with one click.',
+      title: 'Add Your Music',
+      description: 'Upload PDFs, enter details, or import from spreadsheets.',
     },
     {
       number: 3,
-      title: 'Schedule & Organize',
-      description: 'Create rehearsals and gigs. Members RSVP instantly.',
+      title: 'Organize & Tag',
+      description: 'Categorize pieces, add metadata, assign parts to players.',
     },
     {
       number: 4,
-      title: 'Stay Organized',
-      description: 'Manage music, track attendance, send reminders. All in one place.',
+      title: 'Search & Share',
+      description: 'Find anything instantly. Share with your band members.',
     },
   ]
 
   const faqs = [
     {
-      q: 'Is BandSync just for brass bands?',
-      a: 'We\'re built specifically for brass bands, but any ensemble can use it. Concert bands, wind bands, orchestras—if you need to manage availability and share music, BandSync works for you.',
+      q: 'Is BandSync Library just for brass bands?',
+      a: 'We\'re built with brass bands in mind, but any musical ensemble can use it. Concert bands, wind bands, orchestras, choirs—if you have sheet music to organize, BandSync Library works for you.',
     },
     {
       q: 'How much does it cost?',
       a: 'We offer a generous free tier that covers most bands. Paid plans unlock unlimited storage and advanced features. Check our pricing page for details.',
     },
     {
-      q: 'Can members access BandSync on their phones?',
-      a: 'Yes. BandSync is fully optimized for mobile. Members can RSVP, check rehearsal details, and access music on iOS and Android.',
+      q: 'Can members access the library on their phones?',
+      a: 'Yes. BandSync Library is fully optimized for mobile. Members can browse, search, and view sheet music on any device.',
     },
     {
-      q: 'What if band members don\'t want another app?',
-      a: 'Smart invitations arrive via email or SMS. Members don\'t need to download anything. They respond directly from their email or SMS, and their response syncs to your dashboard.',
+      q: 'What file formats do you support?',
+      a: 'We support PDF uploads for sheet music. You can also add metadata like composer, arranger, difficulty level, duration, and custom tags.',
     },
     {
       q: 'Is our music library secure?',
       a: 'Absolutely. Only your band members can access your library. We use enterprise-grade encryption and security. Your music stays yours.',
     },
     {
-      q: 'Can I export my data?',
-      a: 'Yes. You can export attendance records, event details, and your entire music library anytime. Your data is yours.',
+      q: 'Can I import my existing catalog?',
+      a: 'Yes. You can import from spreadsheets (CSV/Excel) or add pieces manually. We\'ll help you migrate your existing catalog painlessly.',
     },
   ]
 
   return (
     <>
       <Head>
-        <title>BandSync | Stop Chasing Your Band for Availability</title>
-        <meta name="description" content="Know your band's lineup in 10 seconds. BandSync is the all-in-one platform for brass bands to manage rehearsals, track availability, and organize sheet music." />
-        <meta name="keywords" content="brass band management, band availability tracker, music library management, band scheduling, UK brass bands, band organization" />
+        <title>BandSync Library | Your Band's Music Collection, Organized</title>
+        <meta name="description" content="Find any piece in seconds. BandSync Library is the smart music library platform for brass bands and ensembles to organize, search, and share sheet music." />
+        <meta name="keywords" content="music library management, sheet music organization, band music catalog, brass band library, digital music library, music collection software" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="BandSync" />
         <meta name="robots" content="index, follow" />
         
         {/* Open Graph Tags */}
-        <meta property="og:title" content="BandSync | Stop Chasing Your Band for Availability" />
-        <meta property="og:description" content="Know your band's lineup in 10 seconds. The all-in-one platform for brass bands." />
+        <meta property="og:title" content="BandSync Library | Your Band's Music Collection, Organized" />
+        <meta property="og:description" content="Find any piece in seconds. The smart music library platform for bands and ensembles." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bandsync.co.uk" />
         <meta property="og:image" content="https://bandsync.co.uk/og-image.jpg" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="BandSync | Stop Chasing Your Band for Availability" />
-        <meta name="twitter:description" content="Know your band's lineup in 10 seconds. The all-in-one platform for brass bands." />
+        <meta name="twitter:title" content="BandSync Library | Your Band's Music Collection, Organized" />
+        <meta name="twitter:description" content="Find any piece in seconds. The smart music library platform for bands and ensembles." />
         
         {/* Canonical URL */}
         <link rel="canonical" href="https://bandsync.co.uk" />
@@ -127,8 +127,8 @@ export default function Home() {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'SoftwareApplication',
-              name: 'BandSync',
-              description: 'Band management platform for brass bands',
+              name: 'BandSync Library',
+              description: 'Music library management platform for bands and ensembles',
               url: 'https://bandsync.co.uk',
               applicationCategory: 'BusinessApplication',
               operatingSystem: 'Web, iOS, Android',
@@ -155,7 +155,7 @@ export default function Home() {
             <div className="w-10 h-10 bg-bs-blue rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">♪</span>
             </div>
-            <span className="font-bold text-lg text-bs-black">BandSync</span>
+            <span className="font-bold text-lg text-bs-black">BandSync Library</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="https://library.bandsync.co.uk" className="text-bs-black hover:text-bs-blue font-medium transition">
@@ -174,29 +174,29 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 text-bs-black">
-                Know Your{' '}
-                <span className="gradient-text">Lineup in 10 Seconds</span>
+                Find Any Piece{' '}
+                <span className="gradient-text">in Seconds</span>
               </h1>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Stop chasing your band for availability. Stop guessing who's turning up. BandSync is the all-in-one platform that replaces WhatsApp chaos, spreadsheets, and last-minute panic.
+                Stop digging through boxes and folders. BandSync Library is the smart music catalog that organizes your band's entire collection, making every piece searchable and accessible.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="https://library.bandsync.co.uk" className="btn-primary text-center">
-                  Start Your Free Trial Now
+                  Start Your Free Library
                 </a>
                 <button className="btn-secondary text-center">
                   Watch Demo (2 min)
                 </button>
               </div>
               <p className="text-sm text-gray-600 mt-6">
-                ✓ No credit card required · ✓ Free for up to 30 members · ✓ Set up in 2 minutes
+                ✓ No credit card required · ✓ Free for up to 500 pieces · ✓ Set up in 5 minutes
               </p>
             </div>
             <div className="animate-slide-up">
               <div className="bg-gray-200 aspect-video rounded-2xl flex items-center justify-center border-4 border-bs-blue border-dashed">
                 <div className="text-center">
-                  <div className="text-6xl mb-4">📸</div>
-                  <p className="text-gray-600 font-medium">Dashboard Screenshot</p>
+                  <div className="text-6xl mb-4">�</div>
+                  <p className="text-gray-600 font-medium">Library Dashboard</p>
                   <p className="text-sm text-gray-500 mt-2">(Coming soon)</p>
                 </div>
               </div>
@@ -213,24 +213,24 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-red-50 p-8 rounded-xl border-2 border-red-200">
-              <div className="text-5xl mb-4">📱</div>
-              <h3 className="text-xl font-bold text-bs-black mb-4">WhatsApp Chaos</h3>
+              <div className="text-5xl mb-4">�</div>
+              <h3 className="text-xl font-bold text-bs-black mb-4">Boxes Everywhere</h3>
               <p className="text-gray-700">
-                Messages flying everywhere. Replies buried. The same question asked 10 times. Half your band doesn't see important updates.
+                Stacks of music in filing cabinets, cupboards, and under the stage. Nobody knows what you actually own or where anything is.
               </p>
             </div>
             <div className="bg-yellow-50 p-8 rounded-xl border-2 border-yellow-200">
-              <div className="text-5xl mb-4">📊</div>
-              <h3 className="text-xl font-bold text-bs-black mb-4">Spreadsheet Nightmare</h3>
+              <div className="text-5xl mb-4">🔍</div>
+              <h3 className="text-xl font-bold text-bs-black mb-4">The Endless Search</h3>
               <p className="text-gray-700">
-                Outdated info. Manual updates. Nobody trusts the data. You spend hours just managing the spreadsheet.
+                "Has anyone seen the Floral Dance parts?" Hours wasted hunting for music before every concert. Missing parts discovered at rehearsal.
               </p>
             </div>
             <div className="bg-orange-50 p-8 rounded-xl border-2 border-orange-200">
-              <div className="text-5xl mb-4">😰</div>
-              <h3 className="text-xl font-bold text-bs-black mb-4">Last-Minute Panic</h3>
+              <div className="text-5xl mb-4">💸</div>
+              <h3 className="text-xl font-bold text-bs-black mb-4">Buying Duplicates</h3>
               <p className="text-gray-700">
-                Rehearsal starts in 30 mins. You still don't know who's coming. Missing parts? Unsure lineup? Stress every rehearsal.
+                Re-ordering music you already own because nobody remembers the catalog. Wasted money on pieces gathering dust in the wrong folder.
               </p>
             </div>
           </div>
@@ -249,36 +249,36 @@ export default function Home() {
                 <div className="flex gap-4">
                   <div className="text-3xl flex-shrink-0">✅</div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">One Simple Dashboard</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Your Entire Collection, Searchable</h3>
                     <p className="text-blue-100">
-                      All band info in one place. No hunting through messages. Everything your band needs is right there.
+                      Every piece cataloged and indexed. Search by title, composer, arranger, or any tag you create. Results in seconds.
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="text-3xl flex-shrink-0">✅</div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Instant Clarity on Availability</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Know Exactly What You Own</h3>
                     <p className="text-blue-100">
-                      One click to see who's coming. No more guessing, no delays, no chaos. You get clarity in seconds.
+                      Complete inventory at your fingertips. Track conditions, locations, and loan status. Never buy duplicates again.
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="text-3xl flex-shrink-0">✅</div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Music Library That Works</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Digital Access for Everyone</h3>
                     <p className="text-blue-100">
-                      Every piece, organized and searchable. Members find sheet music in seconds, not minutes.
+                      Upload PDFs and share with the band. Members access sheet music from any device, anytime.
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                   <div className="text-3xl flex-shrink-0">✅</div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Reminders That Stick</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Concert Programming Made Easy</h3>
                     <p className="text-blue-100">
-                      Automated reminders reach everyone. Less stress for you. Better attendance for your band.
+                      Filter by duration, difficulty, or genre. Build the perfect program in minutes, not hours.
                     </p>
                   </div>
                 </div>
@@ -287,8 +287,8 @@ export default function Home() {
             <div>
               <div className="bg-white bg-opacity-20 aspect-video rounded-2xl flex items-center justify-center border-4 border-white border-dashed">
                 <div className="text-center">
-                  <div className="text-6xl mb-4">🎺</div>
-                  <p className="text-white font-medium">App Interface Demo</p>
+                  <div className="text-6xl mb-4">�</div>
+                  <p className="text-white font-medium">Search Interface Demo</p>
                   <p className="text-sm text-blue-100 mt-2">(Placeholder for screenshot)</p>
                 </div>
               </div>
@@ -301,7 +301,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <h2 className="text-4xl font-bold text-center mb-16 text-bs-black">
-            Everything Your Band Needs
+            Everything Your Library Needs
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((feature, idx) => (
@@ -319,7 +319,7 @@ export default function Home() {
       <section className="py-20 bg-blue-50">
         <div className="container-custom">
           <h2 className="text-4xl font-bold text-center mb-16 text-bs-black">
-            Get Started in 4 Steps
+            Set Up Your Library in 4 Steps
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, idx) => (
@@ -334,7 +334,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <a href="https://library.bandsync.co.uk" className="btn-primary">
-              Create Your Band Now
+              Create Your Library Now
             </a>
           </div>
         </div>
@@ -344,10 +344,10 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container-custom">
           <h2 className="text-4xl font-bold text-center mb-4 text-bs-black">
-            Loved by Brass Bands Across the UK
+            Loved by Librarians Across the UK
           </h2>
           <p className="text-center text-gray-600 mb-16 text-lg">
-            See what bands are saying about BandSync
+            See what bands are saying about BandSync Library
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, idx) => (
@@ -375,23 +375,21 @@ export default function Home() {
       {/* Social Proof Banner */}
       <section className="py-16 bg-gradient-to-r from-bs-blue to-bs-blue-dark">
         <div className="container-custom text-center">
-          <p className="text-white text-lg mb-6">Trusted by leading brass bands across the UK</p>
+          <p className="text-white text-lg mb-6">Trusted by bands across the UK to organize their music</p>
           <div className="flex items-center justify-center gap-12 flex-wrap">
-            <div className="flex flex-col items-center gap-2">
-              <div className="w-20 h-20 bg-white rounded-lg flex items-center justify-center">
-                <div className="text-center text-xs font-bold text-bs-blue">CBBB Logo</div>
-              </div>
-              <p className="text-white text-sm font-medium">City of Birmingham<br/>Brass Band</p>
+            <div className="text-white text-center">
+              <p className="text-3xl font-bold">10,000+</p>
+              <p className="text-blue-100">Pieces Cataloged</p>
             </div>
             <div className="hidden md:block text-white opacity-30">→</div>
             <div className="text-white text-center">
               <p className="text-3xl font-bold">50+</p>
-              <p className="text-blue-100">Bands Active</p>
+              <p className="text-blue-100">Libraries Active</p>
             </div>
             <div className="hidden md:block text-white opacity-30">→</div>
             <div className="text-white text-center">
-              <p className="text-3xl font-bold">1000+</p>
-              <p className="text-blue-100">Members</p>
+              <p className="text-3xl font-bold">100s</p>
+              <p className="text-blue-100">Hours Saved</p>
             </div>
           </div>
         </div>
@@ -430,19 +428,19 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-r from-bs-blue to-bs-blue-dark">
         <div className="container-custom text-center">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Ready to Transform Your Band?
+            Ready to Organize Your Music?
           </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Join 50+ brass bands that have already ditched WhatsApp chaos. Know your lineup in 10 seconds. No credit card required.
+            Join 50+ bands that have finally tamed their music collection. Find any piece in seconds. No credit card required.
           </p>
           <a
             href="https://library.bandsync.co.uk"
             className="inline-block bg-white text-bs-blue font-bold py-4 px-10 rounded-lg text-lg hover:bg-gray-100 transition-colors"
           >
-            Get Started Free Today
+            Start Your Free Library
           </a>
           <p className="text-blue-100 mt-6 text-sm">
-            Set up in 2 minutes. Free for up to 30 members. No hidden fees.
+            Set up in 5 minutes. Free for up to 500 pieces. No hidden fees.
           </p>
         </div>
       </section>
@@ -456,10 +454,10 @@ export default function Home() {
                 <div className="w-8 h-8 bg-bs-blue rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold">♪</span>
                 </div>
-                <span className="font-bold text-lg">BandSync</span>
+                <span className="font-bold text-lg">BandSync Library</span>
               </div>
               <p className="text-gray-400 text-sm">
-                The band management platform built by musicians, for musicians.
+                The music library platform built by musicians, for musicians.
               </p>
             </div>
             <div>
@@ -495,23 +493,23 @@ export default function Home() {
           <div className="bg-bs-blue bg-opacity-20 p-6 rounded-lg mb-8">
             <p className="text-gray-400 text-xs mb-3 font-semibold uppercase">Popular Searches</p>
             <div className="flex flex-wrap gap-3 text-xs">
-              <a href="#" className="text-gray-300 hover:text-white transition">Brass Band Management Software</a>
+              <a href="#" className="text-gray-300 hover:text-white transition">Music Library Software</a>
               <span className="text-gray-600">•</span>
-              <a href="#" className="text-gray-300 hover:text-white transition">Band Availability Tracker</a>
+              <a href="#" className="text-gray-300 hover:text-white transition">Sheet Music Organization</a>
               <span className="text-gray-600">•</span>
-              <a href="#" className="text-gray-300 hover:text-white transition">Music Library Management</a>
+              <a href="#" className="text-gray-300 hover:text-white transition">Band Music Catalog</a>
               <span className="text-gray-600">•</span>
-              <a href="#" className="text-gray-300 hover:text-white transition">UK Brass Bands</a>
+              <a href="#" className="text-gray-300 hover:text-white transition">Digital Music Library</a>
               <span className="text-gray-600">•</span>
-              <a href="#" className="text-gray-300 hover:text-white transition">Band Scheduling App</a>
+              <a href="#" className="text-gray-300 hover:text-white transition">Brass Band Library</a>
               <span className="text-gray-600">•</span>
-              <a href="#" className="text-gray-300 hover:text-white transition">Ensemble Management Platform</a>
+              <a href="#" className="text-gray-300 hover:text-white transition">Music Collection Management</a>
             </div>
           </div>
 
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between text-gray-400 text-sm">
-              <p>&copy; 2024 BandSync. All rights reserved. Built with ♪ for musicians.</p>
+              <p>&copy; 2026 BandSync Library. All rights reserved. Built with ♪ for musicians.</p>
               <div className="flex gap-6 mt-4 md:mt-0">
                 <a href="#facebook" className="hover:text-white transition">Facebook</a>
                 <a href="#twitter" className="hover:text-white transition">Twitter</a>

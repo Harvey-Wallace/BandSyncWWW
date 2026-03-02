@@ -1,10 +1,10 @@
-# BandSync Website 🎺
+# BandSync Library Website 🎼
 
-The official marketing website for BandSync - the band management platform built for brass bands.
+The official marketing website for BandSync Library - the music library platform built for brass bands and ensembles.
 
 ## Overview
 
-BandSync helps brass bands organize rehearsals, track availability, and manage sheet music through one simple, intuitive platform. This is the public-facing website that drives signups and showcases the value of the platform.
+BandSync Library helps brass bands organize, search, and share their sheet music collection through one simple, intuitive platform. This is the public-facing website that drives signups and showcases the value of the library platform.
 
 ## Feature Highlights
 
@@ -64,19 +64,19 @@ next.config.js        # Next.js configuration
 
 ## Sections
 
-1. **Hero Section** - Compelling headline + subheading about solving band chaos
-2. **Pain Points** - Relatable problems (WhatsApp, spreadsheets, stress)
-3. **Solution** - How BandSync solves these problems
-4. **Features** - Outcome-based feature descriptions
+1. **Hero Section** - Compelling headline + subheading about solving music library chaos
+2. **Pain Points** - Relatable problems (boxes everywhere, endless searching, buying duplicates)
+3. **Solution** - How BandSync Library solves these problems
+4. **Features** - Outcome-based library feature descriptions
 5. **How It Works** - 4-step onboarding process
-6. **Testimonials** - Real quotes from band leaders
+6. **Testimonials** - Real quotes from librarians and band leaders
 7. **FAQ** - Common questions and answers
 8. **Final CTA** - Strong call-to-action
 9. **Footer** - Links + SEO optimization
 
 ## SEO Strategy
 
-- **Target Keywords**: "brass band management", "band availability tracker", "music library management UK"
+- **Target Keywords**: "music library management", "sheet music organization", "band music catalog", "digital music library"
 - **Meta Tags**: Optimized title, description, and Open Graph tags
 - **Structured Data**: JSON-LD schema for SoftwareApplication
 - **Mobile Optimization**: Responsive design with mobile-first approach
