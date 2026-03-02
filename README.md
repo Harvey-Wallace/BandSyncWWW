@@ -2,6 +2,10 @@
 
 The official marketing website for BandSync Library - the music library platform built for brass bands and ensembles.
 
+**Live Site:** [https://bandsync.co.uk](https://bandsync.co.uk)
+
+**A Harvey-Wallace Product:** [https://harvey-wallace.co.uk](https://harvey-wallace.co.uk)
+
 ## Overview
 
 BandSync Library helps brass bands organize, search, and share their sheet music collection through one simple, intuitive platform. This is the public-facing website that drives signups and showcases the value of the library platform.
@@ -9,10 +13,23 @@ BandSync Library helps brass bands organize, search, and share their sheet music
 ## Feature Highlights
 
 - **Modern, SEO-optimized landing page** - Built with responsive design and Core Web Vitals optimization
-- **Lightning-fast performance** - Next.js with static generation and image optimization
-- **Mobile-first design** - Fully responsive and thumb-friendly for mobile users
-- **Trust & social proof** - Testimonials, band logos, and real-world use case demonstrations
-- **Pain-to-solution messaging** - Follows proven conversion copywriting principles
+- **Lightning-fast performance** - Next.js with static generation
+- **Mobile-first design** - Fully responsive with hamburger navigation
+- **Complete page structure** - Homepage, Features, Pricing, About, Contact, Privacy, Terms
+- **Harvey-Wallace branding** - Consistent branding throughout
+
+## Pages
+
+| Page | URL | Description |
+|------|-----|-------------|
+| Homepage | `/` | Main landing page with hero, features, testimonials |
+| Features | `/features` | Detailed breakdown of all library features |
+| Pricing | `/pricing` | Pricing plans (£9.99/mo, £99/year, 30-day trial) |
+| About | `/about` | Company story and Harvey-Wallace info |
+| Contact | `/contact` | Contact form and email addresses |
+| Privacy | `/privacy` | GDPR-compliant privacy policy |
+| Terms | `/terms` | Terms of service |
+| 404 | `/404` | Custom error page |
 
 ## Getting Started
 
@@ -45,34 +62,44 @@ npm start
 ## Project Structure
 
 ```
+components/
+└── Layout.tsx         # Shared layout with nav + footer
+
 pages/
-├── index.tsx          # Main landing page with all sections
-├── _app.tsx          # Next.js app wrapper
-└── _document.tsx     # HTML document structure
+├── index.tsx          # Main landing page
+├── features.tsx       # Features page
+├── pricing.tsx        # Pricing page
+├── about.tsx          # About page
+├── contact.tsx        # Contact page
+├── privacy.tsx        # Privacy Policy
+├── terms.tsx          # Terms of Service
+├── 404.tsx            # Custom 404 page
+├── _app.tsx           # Next.js app wrapper
+└── _document.tsx      # HTML document structure
 
 styles/
-└── globals.css       # Global styles and Tailwind directives
+└── globals.css        # Global styles, Tailwind, animations
 
 public/
-├── robots.txt        # SEO crawling instructions
-├── sitemap.xml       # XML sitemap for search engines
-└── ...               # Static assets
+├── robots.txt         # SEO crawling instructions
+└── sitemap.xml        # XML sitemap for search engines
 
-tailwind.config.ts    # Tailwind CSS configuration
-next.config.js        # Next.js configuration
+tailwind.config.ts     # Tailwind CSS configuration
+next.config.js         # Next.js configuration
 ```
 
-## Sections
+## Homepage Sections
 
 1. **Hero Section** - Compelling headline + subheading about solving music library chaos
 2. **Pain Points** - Relatable problems (boxes everywhere, endless searching, buying duplicates)
 3. **Solution** - How BandSync Library solves these problems
 4. **Features** - Outcome-based library feature descriptions
 5. **How It Works** - 4-step onboarding process
-6. **Testimonials** - Real quotes from librarians and band leaders
-7. **FAQ** - Common questions and answers
-8. **Final CTA** - Strong call-to-action
-9. **Footer** - Links + SEO optimization
+6. **Testimonials** - Quotes from librarians and band leaders
+7. **Social Proof** - Band count stats
+8. **FAQ** - Common questions and answers
+9. **Final CTA** - Strong call-to-action
+10. **Footer** - Links, Harvey-Wallace branding, legal pages
 
 ## SEO Strategy
 
@@ -144,4 +171,9 @@ To make changes:
 
 ---
 
-**Built with ♪ for musicians**
+**Built with ♪ for musicians by [Harvey-Wallace](https://harvey-wallace.co.uk)**
+
+## Contact
+
+- **General:** hello@bandsync.co.uk
+- **Support:** support@bandsync.co.uk

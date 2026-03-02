@@ -27,15 +27,20 @@ body {
   }
 
   .btn-primary {
-    @apply bg-bs-blue hover:bg-bs-blue-dark text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 text-lg;
+    @apply bg-bs-blue hover:bg-bs-blue-dark text-white font-bold py-3 px-8 rounded-lg transition-all duration-200 text-lg hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .btn-secondary {
-    @apply border-2 border-bs-blue text-bs-blue hover:bg-bs-blue hover:text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200 text-lg;
+    @apply border-2 border-bs-blue text-bs-blue hover:bg-bs-blue hover:text-white font-bold py-3 px-8 rounded-lg transition-all duration-200 text-lg hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .gradient-text {
     @apply bg-gradient-to-r from-bs-blue to-bs-blue-dark bg-clip-text text-transparent;
+  }
+  
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
   }
 }
 
@@ -43,6 +48,75 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #0080C8;
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Staggered animation delays */
+.animate-delay-100 { animation-delay: 100ms; }
+.animate-delay-200 { animation-delay: 200ms; }
+.animate-delay-300 { animation-delay: 300ms; }
+.animate-delay-400 { animation-delay: 400ms; }
+.animate-delay-500 { animation-delay: 500ms; }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -60,4 +134,20 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #005fa3;
+}
+
+/* Selection color */
+::selection {
+  background-color: #0080C8;
+  color: white;
+}
+
+/* Prose styles for content pages */
+.prose a {
+  color: #0080C8;
+  text-decoration: none;
+}
+
+.prose a:hover {
+  text-decoration: underline;
 }
