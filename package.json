@@ -1,6 +1,6 @@
 {
   "name": "bandsync-www",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BandSync - Band management and music library platform",
   "scripts": {
     "dev": "next dev",
