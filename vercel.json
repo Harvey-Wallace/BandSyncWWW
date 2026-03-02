@@ -4,12 +4,6 @@
   "devCommand": "next dev --port $PORT",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_SITE_URL": {
-      "description": "The site URL",
-      "default": "https://bandsync.co.uk"
-    }
-  },
   "headers": [
     {
       "source": "/:path*",
