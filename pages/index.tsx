@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { useState } from 'react'
 import {
   ArrowRight, BarChart3, Check, ChevronDown, FileSpreadsheet, FolderLock,
-  Library, Menu, Music2, QrCode, Search, ShieldCheck, Smartphone, Users, X,
+  Library, Music2, QrCode, Search, ShieldCheck, Smartphone, Users,
 } from 'lucide-react'
+import { APP_URL, SiteFooter, SiteHeader } from '@/components/SiteChrome'
 
-const APP_URL = 'https://library.bandsync.co.uk'
 
 const features = [
   { icon: Search, number: '01', title: 'Find it before the count-in', copy: 'Search by title, composer, arranger, genre, difficulty or any custom field. Your whole catalogue, answered in seconds.' },
@@ -27,7 +26,6 @@ const faqs = [
 ]
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   return (
@@ -47,17 +45,7 @@ export default function Home() {
         }) }} />
       </Head>
 
-      <header className="site-header">
-        <div className="nav-wrap">
-          <Link href="/" className="brand" aria-label="BandSync home"><span className="brand-mark"><Music2 /></span><span>BandSync <b>Library</b></span></Link>
-          <nav className="desktop-nav" aria-label="Main navigation">
-            <a href="#platform">Platform</a><a href="#mobile">Mobile</a><Link href="/pricing">Pricing</Link><Link href="/about">About</Link>
-          </nav>
-          <div className="nav-actions"><a className="sign-in" href={APP_URL}>Sign in</a><a className="button button-small" href={APP_URL}>Start free <ArrowRight /></a></div>
-          <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu" aria-expanded={menuOpen}>{menuOpen ? <X /> : <Menu />}</button>
-        </div>
-        {menuOpen && <nav className="mobile-nav"><a href="#platform" onClick={() => setMenuOpen(false)}>Platform</a><a href="#mobile" onClick={() => setMenuOpen(false)}>Mobile</a><Link href="/pricing">Pricing</Link><Link href="/about">About</Link><a href={APP_URL}>Sign in</a><a className="button" href={APP_URL}>Start free</a></nav>}
-      </header>
+      <SiteHeader overlay />
 
       <main>
         <section className="hero">
@@ -117,7 +105,7 @@ export default function Home() {
         <section className="final-cta"><div className="cta-lines" /><div className="shell"><span className="eyebrow"><span className="live-dot" /> Your first 500 pieces are free</span><h2>Bring your library<br />into the present.</h2><p>Set up in minutes. Import what you already have. No credit card required.</p><a className="button button-large" href={APP_URL}>Start your free library <ArrowRight /></a></div></section>
       </main>
 
-      <footer><div className="shell footer-grid"><div><Link href="/" className="brand footer-brand"><span className="brand-mark"><Music2 /></span><span>BandSync <b>Library</b></span></Link><p>Built by musicians, for the banding community.</p></div><div><b>Product</b><a href="#platform">Platform</a><a href="#mobile">Mobile apps</a><Link href="/pricing">Pricing</Link><a href={APP_URL}>Sign in</a></div><div><b>Company</b><Link href="/about">About</Link><Link href="/contact">Contact</Link><a href="https://harvey-wallace.co.uk">Harvey-Wallace</a></div><div><b>Legal</b><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><a href="mailto:support@bandsync.co.uk">Support</a></div></div><div className="shell footer-bottom"><span>© 2026 BandSync Library</span><span>Made with care in the UK ♪</span></div></footer>
+      <SiteFooter />
     </>
   )
 }
